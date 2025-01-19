@@ -24,3 +24,13 @@ const actualizarAmigos = () => {
     }
 };
 
+const sortearAmigo = () => {
+    if (amigos.length > 1) {
+        const numeroAleatorio = Math.floor(Math.random() * amigos.length) + 1;
+        const amigoGanador = amigos[numeroAleatorio - 1];
+
+        resultado.innerHTML = `${amigoGanador}`
+    } else {
+        alert('Agregue almenos 2 amigos para comenzar el sorteo');
+    }
+};
