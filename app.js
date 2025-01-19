@@ -16,3 +16,11 @@ const agregarAmigo = () => {
     }
 };
 
+const actualizarAmigos = () => {
+    listaAmigos.innerHTML = '';
+
+    for (let i = 0; i < amigos.length; i++) {
+        listaAmigos.innerHTML+= `<li>${amigos[i]}</li>`        
+    }
+};
+
