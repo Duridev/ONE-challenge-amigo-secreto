@@ -4,3 +4,15 @@ const amigo = document.querySelector('.input-name');
 const listaAmigos = document.querySelector('#listaAmigos')
 const resultado = document.querySelector('#resultado')
 
+const agregarAmigo = () => {
+    //validacion
+    if(amigo.value.trim() === '') {
+        alert('Por favor, inserte un nombre');
+    } else {
+        amigos.push(amigo.value);
+        amigo.value = '';
+
+        actualizarAmigos();
+    }
+};
+
